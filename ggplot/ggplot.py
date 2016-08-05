@@ -613,7 +613,7 @@ class ggplot(object):
                             layer.plot(ax, facetgroup, self._aes)
 
             self.apply_limits()
-            self.add_labels()
+            # self.add_labels()
             self.apply_axis_scales()
             self.apply_axis_labels()
             self.apply_coords()
