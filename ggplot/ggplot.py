@@ -123,7 +123,7 @@ class ggplot(object):
             img.show()
             return "<ggplot: (%d)>" % self.__hash__()
         plt.show()
-        return "<ggplot OH MY GOD!: (%d)>" % self.__hash__()
+        return "<ggplot!: (%d)>" % self.__hash__()
 
     def _handle_index(self):
         if '__index__' in self._aes.values():
@@ -135,7 +135,8 @@ class ggplot(object):
             if label:
                 if isinstance(label, (str, six.text_type)):
                     label = element_text(label)
-                label.override(0.5, 0.95)
+                # testing
+                # label.override(0.5, 0.95)
                 label.apply_to_fig(self.fig)
 
         if not self.facets:
@@ -258,6 +259,7 @@ class ggplot(object):
                 xlab = element_text(xlab)
 
             # enforce it to be an x-label
+            # testing
             # xlab.override(0.5, 0.05)
             xlab.apply_to_fig(self.fig)
 
