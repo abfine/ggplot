@@ -123,7 +123,7 @@ class ggplot(object):
             img.show()
             return "<ggplot: (%d)>" % self.__hash__()
         plt.show()
-        return "<ggplot: (%d)>" % self.__hash__()
+        return "<ggplot OH MY GOD!: (%d)>" % self.__hash__()
 
     def _handle_index(self):
         if '__index__' in self._aes.values():
