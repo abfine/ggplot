@@ -271,7 +271,7 @@ class ggplot(object):
 
         if ylab:
             # enforce it to be a y-label
-            ylab.override(0.05, 0.5, dict(rotation='vertical'))
+            # ylab.override(0.05, 0.5, dict(rotation='vertical'))
             ylab.apply_to_fig(self.fig)
 
     def _iterate_subplots(self):
