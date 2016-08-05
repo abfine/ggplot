@@ -258,7 +258,7 @@ class ggplot(object):
                 xlab = element_text(xlab)
 
             # enforce it to be an x-label
-            xlab.override(0.5, 0.05)
+            # xlab.override(0.5, 0.05)
             xlab.apply_to_fig(self.fig)
 
         if self.ylab:
@@ -271,7 +271,7 @@ class ggplot(object):
 
         if ylab:
             # enforce it to be a y-label
-            # ylab.override(0.05, 0.5, dict(rotation='vertical'))
+            ylab.override(0.05, 0.5, dict(rotation='vertical'))
             ylab.apply_to_fig(self.fig)
 
     def _iterate_subplots(self):
